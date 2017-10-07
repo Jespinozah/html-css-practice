@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Css Grids</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /*grid-column-gap: 1em;
+        grid-row-gap: 1em;*/
+        grid-gap: 1em;
+      }
+
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ad delectus commodi impedit, iusto alias. Dolore impedit doloribus velit temporibus odit rerum beatae laboriosam consectetur eum ex quo maiores atque maxime, voluptas, dolores iusto, ullam in cumque minus assumenda asperiores perferendis! Ipsa rem, soluta voluptas facere commodi eveniet impedit, illum sunt, modi consequuntur sit recusandae, assumenda fugiat! Quia necessitatibus ea saepe velit magnam repellendus possimus reiciendis sapiente, assumenda perspiciatis distinctio corporis odio. Vel corporis voluptates quisquam iusto ab veniam esse.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error temporibus facilis vitae maiores suscipit perspiciatis veritatis nesciunt, ipsam vel at necessitatibus ad unde officia hic, quisquam adipisci? Enim perspiciatis, numquam.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ad delectus commodi impedit, iusto alias. Dolore impedit doloribus velit temporibus odit rerum beatae laboriosam consectetur eum ex quo maiores atque maxime, voluptas, dolores iusto, ullam in cumque minus assumenda asperiores perferendis! Ipsa rem, soluta voluptas facere commodi eveniet impedit, illum sunt, modi consequuntur sit recusandae, assumenda fugiat! Quia necessitatibus ea saepe velit magnam repellendus possimus reiciendis sapiente, assumenda perspiciatis distinctio corporis odio. Vel corporis voluptates quisquam iusto ab veniam esse.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error temporibus facilis vitae maiores suscipit perspiciatis veritatis nesciunt, ipsam vel at necessitatibus ad unde officia hic, quisquam adipisci? Enim perspiciatis, numquam.
+    </div>
+  </div>
+  </body>
+</html>
