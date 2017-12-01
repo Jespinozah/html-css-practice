@@ -1,0 +1,41 @@
+$dark-sky-blue: #6Ac0d6;
+$blu-lagoon: #b2e4f6;
+$pale-cyan: #89e5f6;
+$rich-black: #010f19;
+$dark-celurean: #08517a;
+body {
+  background: $rich-black;
+}
+.box {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  border: solid 3px white;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+}
+.line-1 {
+  position: absolute;
+  background: $pale-cyan;
+  height: 50%;
+  bottom: 25%;
+  width: 5%;
+  left: 45%;
+}
+.line-2 {
+  position: absolute;
+  background: $dark-sky-blue;
+  height: 50%;
+  bottom: 25%;
+  width: 5%;
+  left: 50%;
+}
+.triangle {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: red;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
