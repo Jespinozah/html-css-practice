@@ -1,5 +1,5 @@
 $dark-sky-blue: #6Ac0d6;
-$blu-lagoon: #b2e4f6;
+$blue-lagoon: #b2e4f6;
 $pale-cyan: #89e5f6;
 $rich-black: #010f19;
 $dark-celurean: #08517a;
@@ -10,7 +10,7 @@ body {
   position: relative;
   height: 400px;
   width: 600px;
-  border: solid 3px white;
+  border: none;
   margin: auto;
   display: block;
   margin-top: 8%;
@@ -22,6 +22,7 @@ body {
   bottom: 25%;
   width: 5%;
   left: 45%;
+  z-index: 1;
 }
 .line-2 {
   position: absolute;
@@ -30,12 +31,62 @@ body {
   bottom: 25%;
   width: 5%;
   left: 50%;
+  z-index: 1;
 }
 .triangle {
   position: absolute;
   height: 40%;
-  width: 100%;
-  background: red;
+  width: 200%;
+  top: -20%;
+  left: -100%;
+  background: $dark-celurean;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 2;
+}
+.triangle-sm {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  top: -15%;
+  left: -0%;
+  background: $dark-sky-blue;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 2;
+}
+.shine {
+  position: absolute;
+  height: 20%;
+  top: 90%;
+  width: 100%;
+  background: $blue-lagoon;  
+  animation: shine 1s infinite;
+  z-index: 3;
+}
+@keyframes shine{
+  0%{
+    top: 100%;
+  }
+  100%{
+    top: -10%;
+  }
+}
+.line-3 {
+  position: absolute;
+  background: $pale-cyan;
+  height: 30%;
+  bottom: 25%;
+  width: 5%;
+  left: 40%;
+  z-index: 1;
+}
+.line-4 {
+  position: absolute;
+  background: $dark-celurean;
+  height: 30%;
+  bottom: 25%;
+  width: 5%;
+  left: 55%;
+  z-index: 1;
 }
