@@ -1,3 +1,1 @@
-$(document).ready(function(){
-  alert("jquery loaded");
-});
+//$("h3").css({border: "3px solid blue"});
